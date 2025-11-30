@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.h1-moon{
+    font-family: 'Momo Trust Display', sans-serif;
+    font-size: 3em;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0.6em 0;
+    border-bottom: 2px solid dimgray;
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.4);
+}
+
+.p-moon{
+    font-family: 'Momo Trust Display', sans-serif;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    line-height: 1.45em;
+    margin-top: 0.4em;
+}
+
+body{
+    font-size: 16px;
+}
+
+.moon{
+    width: 85%;
+    margin: 50px auto;
+}

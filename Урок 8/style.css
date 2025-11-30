@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Special Gothic Expanded One", sans-serif;
+}
+
+body {
+    background: url(pattern_100x100.png);
+}
+
+header {
+    margin-top: 32px;
+}
+
+.header-a {
+    margin: 0px 430px;
+    padding: 10px;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+.header-p {
+    text-align: center;
+    margin-top: 8px;
+}
+
+.header-span {
+    padding: 2px 4px;
+    color: white;
+    background-color: black;
+}
+
+main {
+    width: 80%;
+    margin: 32px auto;
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    width: 65%;
+    float: left;
+}
+
+article {
+    margin-bottom: 24px;
+    box-shadow: 1px 0.5px 10px darkgray;
+    background-color: white;
+}
+
+.blog-entry-content {
+    padding: 12px;
+}
+
+h5 {
+    margin-top: 8px;
+}
+
+.blog-date {
+    color: red;
+}
+
+.blok-description-button {
+    margin-top: 24px;
+}
+
+button {
+    padding: 8px 12px;
+    border: 1px solid red;
+}
+
+.blog-comments {
+    margin-top: 8px;
+    float: right;
+}
+
+.blog-number {
+    padding: 2px 4px;
+    color: white;
+    background-color: black;
+}
+
+.blog-description {
+    margin-top: 24px;
+}
+
+.right-container {
+    position: relative;
+    top: -870px;
+    float: right;
+    margin-left: 5%;
+    width: 30%;
+    background-color: white;
+}
+
+aside {
+    box-shadow: 1px 0.5px 10px darkgray;
+}
+
+.menu-content {
+    padding: 12px;
+}
+
+.menu-p {
+    margin-top: 8px;
+}
+
+.circle {
+    background: red;    
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    position: relative;
+    top: -220px;
+    left: -110px;
+}
+
+.blog-entry-content1 {
+    padding: 12px;
+}
+
+.img1 {
+    transition: 1s;
+}
+
+.img1:hover {
+    filter: invert();
+}
+
+.img2 {
+    transition: 1s;
+}
+
+.img2:hover {
+    filter: contrast(10);
+}
+
+/* .article1 {
+    margin-left: 115px;
+} */
