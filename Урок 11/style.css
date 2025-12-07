@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    cursor: url(https://img.icons8.com/softteal/24/blue-pointer.png), auto;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(45deg, red, black);
+    font-family: "Science Gothic", sans-serif;
+}
+
+main {
+    width: 50%;
+    margin: 150px auto;
+}
+
+article {
+    background-color: #fff;
+    padding: 28px 32px;
+    border-radius: 16px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.title {
+    font-size: 55px;
+    color: red;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 3px 4px black, 4px 5px red;
+    width: fit-content;
+    background: linear-gradient(transparent 60%, rgba(255, 0, 0, 0.5)) 40%;
+    background-repeat: no-repeat;
+    background-size: 0;
+    transition: 0.5s;
+}
+
+.title:hover {
+    background-size: 100%;
+    cursor: url(https://img.icons8.com/material-rounded/24/blue-pointer.png), auto;
+}
+
+.subtitle {
+    color: red;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 24px 0px;
+    text-shadow: 2px 2px 1px black;
+}
+
+::selection {
+    color: black;
+    background-color: red;
+}
