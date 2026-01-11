@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    margin: 200px auto;
+    transform-origin: right bottom;
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.box:hover {
+    animation-name: change-color, rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    } 
+
+    100% {
+        transform: rotate(360deg);
+    } 
+}
+
+@keyframes change-color {
+    0% {
+        background-color: red;
+        transform: scale(1.0);
+    }
+
+    50% {
+        background-color: green;
+        transform: scale(1.5);
+    }
+
+    100% {
+        background-color: red;
+        transform: scale(1.0);
+    }
+}
