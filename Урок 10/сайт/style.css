@@ -1,0 +1,74 @@
+.empty {
+    height: 800px;
+}
+
+.header {
+    padding: 20px;
+    box-sizing: border-box;
+    border: 5px solid black;
+    border-radius: 10px;
+    background-color: red;
+}
+
+.phone-link {
+    border: 5px solid black;
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.car-link {
+    border: 5px solid black;
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.dress-link {
+    border: 5px solid black;
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.computer-link {
+    border: 5px solid black;
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.main {
+    margin-left: 50px;
+    display: flex;
+    width: 1000px;
+    flex-flow: row wrap;
+    gap: 50px;
+    justify-content: start;
+    align-items: start;
+}
+
+.img-phone {
+    width: 300px;
+}
+
+.img-car {
+    width: 300px;
+}
+
+.img-dress {
+    width: 300px;
+}
+
+.img-computer {
+    width: 300px;
+}
+
+.phone {
+    margin: 10px;
+    border: 5px solid black;
+}

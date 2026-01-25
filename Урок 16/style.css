@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.root {
+    --first-color: blue;
+    --button-color: darkblue;
+    --button-color: rgb(0, 0, 70);
+    --title-color: blue;
+    --text-color: blue;
+    --text-color-light: rgb(101, 101, 255);
+    --body-color: rgb(196, 182, 249);
+    --font-medium: 500;
+    --font-bold: 700;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+body,
+button,
+input {
+    font-family: "Special Gothic Expanded One", sans-serif;
+}
+
+i {
+    font-size: 1.5rem;
+}
+
+.header {
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.container {
+    margin: auto;
+    max-width: 1024px;
+}
+
+.nav {
+    height: 5rem;
+    display: flex;
+    column-gap: 3rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo,
+.nav__toggle,
+.nav__shop,
+.nav__close {
+    color: var(--title-color);
+}
+
+.nav__logo {
+    text-transform: uppercase;
+    font-weight: var(--font-bold);
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    column-gap: 0.25rem;
+}
+
+.nav__btns {
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+}
+
+/* .nav__toggle,
+.nav__close {
+    display: none;
+} */
+
+.nav__list{
+    display: flex;
+    column-gap: 2.5rem;
+}
+
+.nav__link {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
