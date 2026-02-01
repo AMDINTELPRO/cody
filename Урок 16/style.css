@@ -80,6 +80,7 @@ i {
 .nav__toggle,
 .nav__shop,
 .nav__close {
+    transition: 0.3s;
     color: var(--title-color);
 }
 
@@ -90,6 +91,7 @@ i {
     display: flex;
     align-items: center;
     column-gap: 0.25rem;
+    transition: 0.3s;
 }
 
 .nav__btns {
@@ -109,6 +111,7 @@ i {
 }
 
 .nav__link {
+    transition: 0.3s;
     color: var(--title-color);
     font-weight: var(--font-medium);
 }
@@ -158,6 +161,7 @@ i {
     column-gap: 2rem;
     display: flex;
     transform: rotate(-90deg);
+    transition: 0.3s;
 }
 
 .home__social-link {
@@ -179,3 +183,17 @@ i {
     margin-bottom: 1.5rem;
 }
 
+.nav__logo:hover,
+.nav__toggle:hover,
+.nav__shop:hover,
+.nav__close:hover {
+    color: white;
+}
+
+.nav__link:hover {
+    color: white;
+}
+
+.home__social-link:hover {
+    transform: translateX(10px);
+}
