@@ -5,15 +5,15 @@
 }
 
 .root {
-    --first-color: blue;
+    --first-color: rgb(0, 0, 255);
     --button-color: darkblue;
-    --button-color: rgb(0, 0, 70);
     --title-color: blue;
     --text-color: blue;
     --text-color-light: rgb(101, 101, 255);
     --body-color: rgb(196, 182, 249);
     --font-medium: 500;
     --font-bold: 700;
+    --button-color-alt: aqua;
 }
 
 ul {
@@ -105,7 +105,7 @@ i {
     display: none;
 } */
 
-.nav__list{
+.nav__list {
     display: flex;
     column-gap: 2.5rem;
 }
@@ -196,4 +196,106 @@ i {
 
 .home__social-link:hover {
     transform: translateX(10px);
+}
+
+.featured__container {
+    gap: 1.5rem;
+    justify-content: center;
+    grid-template-columns: repeat(3, 312px);
+    padding-top: 2rem;
+    align-items: flex-start;
+}
+
+
+.featured__title {
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+}
+
+.featured__title
+.featured__price {
+    font-size: 1rem;
+    font-weight: var(--font-bold);
+}
+
+.featured__card {
+    position: relative;
+    text-align: center;
+    background-color: white;
+    padding-top: 2rem;
+    border: 1px solid rgb(146, 146, 146);
+    overflow-y: hidden;
+    transition: 0.3s;
+}
+
+.featured__img {
+    height: 214px;
+    margin-bottom: 1rem;
+}
+
+.featured__price {
+    display: block;
+    color: var(--first-color);
+    transition: 0.3s;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--button-color);
+    color: #000000;
+    padding: 1.25rem 2rem;
+    font-weight: var(--font-medium);
+    transition: 0.3s;
+    margin-top: 2rem;
+}
+
+.button:hover {
+    background-color: var(--button-color-alt);
+}
+
+.button--gray {
+    background-color: hsl(0%, 0%, 75%);
+    color: var(--title-color);
+}
+
+.button--gray:hover {
+    background-color: hsl(0%, 0%, 63%);
+}
+
+.button--small {
+    padding: 1rem, 1.5rem;
+}
+
+.featured__tag {
+    background-color: blue;  
+    padding: 0.5rem 1rem;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: var(--font-medium);
+    position: absolute;
+    transform: rotate(-90deg);
+    left: -1rem;
+    top: 3rem;
+}
+
+.featured__button {
+    font-size: 0.9rem;
+    opacity: 0;
+    transform: translateY(1rem);
+}
+
+.featured__card:hover {
+    padding: 2rem 0 3rem 0;
+    box-shadow: 0 12px 32px rgba(51, 51, 51, 0.1);
+}
+
+.featured__card:hover
+.featured__button {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.featured__card:hover .featured__price {
+    margin-bottom: 1.5rem;
 }
