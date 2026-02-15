@@ -290,12 +290,125 @@ i {
     box-shadow: 0 12px 32px rgba(51, 51, 51, 0.1);
 }
 
-.featured__card:hover
+.featured__card:hover,
 .featured__button {
     opacity: 1;
     transform: translateY(0);
 }
 
-.featured__card:hover .featured__price {
+.featured__card:hover, 
+.featured__price {
     margin-bottom: 1.5rem;
 }
+
+.testimonial-container {
+    gap: 4rem;
+}
+
+.testimonial-slider {
+    width: 400px;
+    overflow: hidden;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.testimonial-card {
+    scroll-snap-align: start;
+    width: 400px;
+    flex-shrink: 0;
+}
+
+.testimonial__quote {
+    padding: 0.5rem 0.75rem;
+    display: inline-flex;
+    color: var(--first-color);
+    box-shadow: 0.4px 12px gray;
+    margin-bottom: 2rem;
+}
+
+.testimonial__author {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.author-data {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.author-img {
+    width: 60px;
+    border-radius: 50%;
+}
+
+.footer__box {
+    padding: 1rem;
+    border: 1px solid var(--body-color);
+    border-radius: 1rem 1rem 0 0;
+    justify-content: center;
+    grid-template-columns: repeat(3, 312px);
+    background-color: grey;
+}
+
+.footer__number {       
+    color: white;
+    background-color: black;
+    box-sizing: border-box;
+    border: 2px solid white;
+    font-size: 15px;
+    margin: 1rem;
+    padding: 10px 10px 10px 10px;
+    border-radius: 1rem;
+    width: 190px;
+    transition: 0.3s;
+}
+
+.footer__mail {       
+    color: white;
+    background-color: black;
+    box-sizing: border-box;
+    border: 2px solid white;
+    font-size: 15px;
+    padding: 10px 10px 10px 10px;
+    margin: 1rem;
+    border-radius: 1rem;
+    width: 190px;
+    transition: 0.3s;
+}
+
+.footer__address {       
+    color: white;
+    background-color: black;
+    box-sizing: border-box;
+    border: 2px solid white;
+    font-size: 15px;
+    padding: 10px 10px 10px 10px;
+    margin: 1rem;
+    border-radius: 1rem;
+    width: 190px;
+    transition: 0.3s;
+}
+
+.footer__address-img {       
+    box-sizing: border-box;
+    transition: 0.3s;
+    margin: 1rem;
+}
+
+
+
+.footer__number:hover,
+.footer__mail:hover,
+.footer__address:hover,
+.footer__address-img:hover,
+.footer__social_networks-vk:hover,
+.footer__social_networks-tg:hover,
+.footer__qr:hover
+{
+    transform: translateY(-10px);
+}
+
