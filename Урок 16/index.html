@@ -176,17 +176,27 @@
         <section>
             <video src="video.mp4" controls autoplay loop muted></video>
         </section>
-        <form action="">
-            <label for="email">Email</label>
-            <input type="email" placeholder="email@example.ru" name="email" autocomplete="on">
-            <label for="password">Password</label>
-            <input type="password" name="password">
-            <br>
-            <label>
-                <input type="checkbox"> Lorem ipsum dolor
-            </label>
-            <textarea name="" id=""></textarea>
-        </form>
+        <div class="form-warpper flex_items-bottom card">
+            <form class="form" onsubmit="sendEmailTelegram(event)">
+                <p class="form-title">
+                    Как связаться с нами
+                </p>
+                <div class="form-group">
+                    <label for="name3">Имя</label>
+                    <input type="text" name="name" id="name3" autocomplete="off" maxlength="50" required>
+
+                    <label for="phone3">Номер телефона</label>
+                    <input type="text" name="phone" id="phone3" autocomplete="off" maxlength="50" required>
+
+                    <label for="problem3">Краткое описание проблемы</label>
+                    <input type="text" name="problem" id="problem3" autocomplete="off" maxlength="50" required>
+                </div>
+                <div class="form-submit-button">
+                    <button class="form_button" type="submit">Отправить</button>
+                </div>
+                <div class="form_send_result"></div>
+            </form>
+        </div>
         <section class="footer">
             <div class="footer__box">
                 <div class="footer__number">
@@ -218,6 +228,7 @@
             </div>
         </section>
     </main>
-</body>
 
+</body>
+<script src="script.js"></script>
 </html>
