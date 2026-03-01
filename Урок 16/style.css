@@ -412,3 +412,18 @@ i {
     transform: translateY(-10px);
 }
 
+form {
+    width: 500px;
+    margin: 200px auto;
+    border: 1px solid black;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid red;
+}
+
